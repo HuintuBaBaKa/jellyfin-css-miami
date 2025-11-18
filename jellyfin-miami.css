@@ -1,12 +1,12 @@
 /*CSS Jellyfin heme Name: Miami Retro*/
 /* Variables */
 :root {
-    --primary-r: 124;
-    --primary-g: 94;
+    --primary-r: 157;
+    --primary-g: 134;
     --primary-b: 255;
     --primary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 1.0);
     --secondary-accent-color: #6642FF;
-    --primary-background-color: rgba(30,23,58,0.6);
+    --primary-background-color: rgba(4,3,7,0.6);
     --secondary-background-color: rgba(30,23,58,0.2);
     --primary-background-transparent: rgba(35,35,35,0.5);
     --secondary-background-transparent: rgba(0,0,0,0.6);
@@ -117,6 +117,10 @@ progress::-webkit-progress-value {
     background-color: #202020; /* dark gray background */
     border-radius: 20px; /* rounded corners */
 }
+ 
+#loginPage .button-submit {
+    background-color: var(--secondary-accent-color) !important;
+}
 
 /*Hide "please login" text, margin is to prevent login form moving too far up*/  
 #loginPage h1 {display: none}  
@@ -134,10 +138,11 @@ progress::-webkit-progress-value {
 }
 
 .backgroundContainer {
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: url('https://i.ibb.co/fYrcTb89/Frame-8.png');
-  filter: blur(2px);
+  background-color: rgba(0, 0, 0, 100);
+  background-image: url('https://i.ibb.co/zTSgG3rX/grayscale-circles-3840x2160-18964.jpg');
+  filter: blur(4px);
   background-size: cover;
+  transform: scale(1.1);
 }
 
 .backdropContainer {
@@ -156,14 +161,39 @@ progress::-webkit-progress-value {
     filter: blur(15px) !important;
 }
 
+.backgroundContainer:after {
+  /* content is required when using :after */
+  content: "";
+  position: fixed;
+  animation: grain 8s steps(10) infinite;
+  background-image: url("https://i.ibb.co/65FCq2k/paper-1.png");
+  height: 300%;
+  left: -50%;
+  opacity: 0.2;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+  filter: brightness(70%);
+}
 
-
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
 
 /*Search page*/
 .button-flat:hover,
 .button-flat-accent,
 .button-link {
-    color: #7C5EFF !important;
+    color: #9D86FF !important;
 }
 
 #searchPage h2 {display: none}  
@@ -315,5 +345,3 @@ html,
         transform: translateY(-60%);
     }
 }
-
-
