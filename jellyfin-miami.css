@@ -55,7 +55,8 @@ CSS Jellyfin heme Name: Miami Retro
 
 #searchPage h2 {display: none}  
 #searchPage .verticalSection.searchSuggestions {
-	max-width: 28em;
+    margin-top: 80px
+    max-width: 28em;
     padding: 32px;
     background-color: #202020; /* dark gray background */
     border-radius: 20px; /* rounded corners */
