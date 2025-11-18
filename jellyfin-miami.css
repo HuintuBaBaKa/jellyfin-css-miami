@@ -46,6 +46,22 @@ CSS Jellyfin heme Name: Miami Retro
     filter: blur(15px) !important;
 }
 
+/*searchsuggestion*/
+.button-flat:hover,
+.button-flat-accent,
+.button-link {
+    color: #7C5EFF !important;
+}
+
+#searchPage h2 {display: none}  
+#searchPage .verticalSection.searchSuggestions {
+	max-width: 28em;
+    padding: 32px;
+    background-color: #202020; /* dark gray background */
+    border-radius: 20px; /* rounded corners */
+}
+
+
 .mdl-slider { color: #7C5EFF; }
 .mdl-slider::-webkit-slider-thumb { color: #7C5EFF; }
 .mdl-slider::-ms-thumb { background: #7C5EFF; }
@@ -152,19 +168,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 .progressring-spiner {
     border-color: #7C5EFF !important;
-}
-
-.button-flat:hover,
-.button-flat-accent,
-.button-link {
-    color: #7C5EFF !important;
-}
-
-#searchPage .searchSuggestionsList.padded-left.padded-right {
-	max-width: 28em;
-    padding: 32px;
-    background-color: #202020; /* dark gray background */
-    border-radius: 20px; /* rounded corners */
 }
 
 .emby-input:focus,
