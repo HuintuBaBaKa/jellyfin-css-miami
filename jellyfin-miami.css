@@ -191,7 +191,7 @@ progress::-webkit-progress-value {
 
 
 /* Fix for header buttons */
-.headerTabs, sectionTabs {
+.headerTabs {
 	max-size: 28rem;
 }
 .layout-desktop .emby-button-foreground {
