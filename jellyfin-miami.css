@@ -5,6 +5,12 @@ CSS Jellyfin heme Name: Miami Retro
 /*Narrow the login form*/  
 #loginPage .readOnlyContent, #loginPage form {max-width: 28em;}
 
+.form {
+	 padding: 20px;
+    background-color: #f0f0f0; /* light gray background */
+    border-radius: 20px; /* rounded corners */
+}
+
 /*Hide "please login" text, margin is to prevent login form moving too far up*/  
 #loginPage h1 {display: none}  
 #loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 80px}
