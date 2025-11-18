@@ -66,12 +66,9 @@ CSS Jellyfin heme Name: Miami Retro
     padding: 32px;
     background-color: #202020; /* dark gray background */
     border-radius: 20px; /* rounded corners */
+	display: flex;
 }
 
-#searchPage .verticalSection.searchSuggestions { 
-    display: flex;
-    justify-content: center;
-}
 
 
 /*Banner transparency and larger font, adjust both "size-adjust" and "size" to modify font size*/
