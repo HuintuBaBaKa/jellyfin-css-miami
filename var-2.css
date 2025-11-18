@@ -282,8 +282,7 @@ html,
     padding-bottom: 10px !important;
 }
 /* Rounded header buttons */
-.headerTabs,
-.headerRight {
+.headerTabs, .headerRight {
     background-color: var(--primary-background-transparent) !important;
     border-radius: 50px !important;
     backdrop-filter: blur(var(--blur)) !important;
@@ -291,6 +290,8 @@ html,
 .layout-desktop .headerTabs,
 .layout-tv .headerTabs {
     margin-bottom: 10px !important;
+    text-size-adjust: 110%;  
+    font-size: 110%;
 }
 .layout-desktop .headerTabs {
     margin-left: 160px !important;
