@@ -229,12 +229,6 @@ html,
     text-size-adjust: 110%;  
     font-size: 90%;
 }
-.layout-desktop .headerTabs,
-.layout-tv .headerTabs {
-    margin-bottom: 10px !important;
-    text-size-adjust: 110%;  
-    font-size: 110%;
-}
 .layout-desktop .headerTabs {
     margin-top: -40px !important;
     margin-right: auto;
