@@ -10,7 +10,7 @@ Enter the following line in the "Custom CSS:" field
 
 @import url("https://bit.ly/4pi3zAO");
 
-* This bit.ly link redirects to:  https://HuintuBaBaKa.github.io/jellyfin-css-miami/blob/main/jellyfin-miami.css
+* This bit.ly link redirects to:  https://huintubabaka.github.io/jellyfin-css-miami/jellyfin-miami.css
 
 Click save and refresh the browser window.
 
