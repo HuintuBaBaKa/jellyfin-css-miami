@@ -1,6 +1,108 @@
 /*CSS Jellyfin heme Name: Miami Retro*/
+/* Variables */
+:root {
+    --primary-r: 7C5EFF;
+    --primary-g: 6642FF;
+    --primary-b: 502FDF;
+    --primary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 1.0);
+    --secondary-accent-color: #00a4dc20;
+    --primary-background-color: #101010;
+    --secondary-background-color: #181818;
+    --primary-background-transparent: rgba(35,35,35,0.5);
+    --secondary-background-transparent: rgba(0,0,0,0.6);
+    --tertiary-background-transparent: rgba(35,35,35,0.85);
+    --rounded-cards: 15px;
+    --blur: 10px;
 
-/*Narrow the login form*/  
+    /* Alternate accents*/
+    --primary-alt1: rgb(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 1);
+    --primary-alt2: rgb(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.85);
+    --primary-alt3: rgb(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.7);
+    --primary-alt4: rgb(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.55);
+    --primary-alt5: rgb(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.4);
+}
+
+/* Setting accent color variable */
+.emby-checkbox:checked + span + .checkboxOutline,
+.selectionCommandsPanel,
+.countIndicator,
+progress[aria-valuenow]:before {
+    background: var(--primary-accent-color) !important;
+}
+progress::-moz-progress-bar {
+    background: var(--primary-accent-color) !important;
+}
+progress::-webkit-progress-value {
+    background: var(--primary-accent-color) !important;
+}
+.emby-checkbox:checked + span + .checkboxOutline,
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline,
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor:focus,
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4,
+.progressring-spiner {
+    border-color: var(--primary-accent-color) !important;
+}
+.page:not(.itemDetailPage) .button-link,
+.selectLabelFocused,
+.textareaLabelFocused,
+.inputLabelFocused,
+.emby-tab-button:hover,
+.metadataSidebarIcon,
+.upNextDialog-countdownText,
+.listItemImageButton:hover,
+.button-flat:hover,
+#divRunningTasks span {
+    color: var(--primary-accent-color) !important;
+}
+@media (hover: hover) and (pointer: fine) {
+    .paper-icon-button-light:hover:not(:disabled) {
+        color: var(--primary-accent-color) !important;
+        background-color: var(--secondary-accent-color) !important;
+    }
+}
+/* Dynamic colors for default cards */
+.defaultCardBackground1 {
+    background-color: var(--primary-alt1) !important;
+}
+.defaultCardBackground2 {
+    background-color: var(--primary-alt2) !important;
+}
+.defaultCardBackground3 {
+    background-color: var(--primary-alt3) !important;
+}
+.defaultCardBackground4 {
+    background-color: var(--primary-alt4) !important;
+}
+.defaultCardBackground5 {
+    background-color: var(--primary-alt5) !important;
+}
+/* Background colors */
+.noBackdropTransparency .detailPagePrimaryContainer,
+.noBackdropTransparency .detailPageSecondaryContainer {
+    background-color: var(--primary-background-color) !important;
+}
+
+/* Increase size of Jellyfin logo */
+.layout-desktop .pageTitleWithLogo {
+    margin-left: 25px !important;
+    height: 40px !important;
+}
+
+/* Fix for empty header with padding */
+[dir="ltr"] .pageTitle:not(.pageTitleWithLogo):empty {
+    margin: 0 !important;
+}
+
+
+
+
+/*login form*/  
+
 #loginPage .readOnlyContent, #loginPage form {
     max-width: 28em;
     padding: 32px;
@@ -15,6 +117,10 @@
 /*Hide "manual" and "forgot" buttons*/  
 #loginPage .raised.cancel.block.btnManual.emby-button {display: none}  
 #loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}
+
+
+
+
 
 /*Stylized background*/ 
 .backdropImage {
@@ -44,7 +150,10 @@
     filter: blur(15px) !important;
 }
 
-/*searchsuggestion*/
+
+
+
+/*Search page*/
 .button-flat:hover,
 .button-flat-accent,
 .button-link {
