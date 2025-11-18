@@ -2,6 +2,14 @@
 CSS Jellyfin heme Name: Miami Retro
 */
 
+.backgroundContainer {  
+  background-color: rgba(0, 0, 0, 0);  
+  background-image: url("https://i.ibb.co/fYrcTb89/Frame-8.png");  
+  background-blend-mode: overlay;  
+  background-size: cover;  
+  filter: blur(2px) grayscale(0.01);
+}
+
 .mdl-slider { color: #7C5EFF; }
 .mdl-slider::-webkit-slider-thumb { color: #7C5EFF; }
 .mdl-slider::-ms-thumb { background: #7C5EFF; }
@@ -33,14 +41,6 @@ div[data-role=controlgroup] a.ui-btn-active {
     background: #0c0c0c !important;
 }
 
-.backgroundContainer {  
-  background-color: rgba(0, 0, 0, 0);  
-  background-image: url("https://i.ibb.co/fYrcTb89/Frame-8.png");  
-  background-blend-mode: overlay;  
-  background-size: cover;  
-  filter: blur(2px) grayscale(0.01);
-
-}
 
 .dialog {border-radius: 6px !important; background-color: rgba(0, 0, 0, 0.9);}
 .actionSheetMenuItem:hover {background-color: rgba(49, 102, 54, 0.5);}
